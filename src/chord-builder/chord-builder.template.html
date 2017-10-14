@@ -1,0 +1,8 @@
+<select multiple="multiple" class="pitch-select">
+  <option ng-repeat="pitch in $ctrl.pitches" value="{{pitch.midiNumber}}">{{pitch.name}}</option>
+</select>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.pitch-select').select2();
+    });
+</script>
